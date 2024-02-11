@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Proposal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Will you be my Valentine?</h1>
+    <p>Hi [Girlfriend's Name],</p>
+    <p>I have something important to ask you...</p>
+    <button onclick="propose()">Click here to find out!</button>
+    <div id="proposal" style="display: none;">
+      <p>I love you more than words can express, and I can't imagine my life without you.</p>
+      <p>Will you go out with me this Valentine's Day?</p>
+      <button onclick="confirmProposal()">Yes, I'd love to!</button>
+      <button onclick="rejectProposal()">Sorry, I can't.</button>
+    </div>
+  </div>
+
+  <script>
+    function propose() {
+      document.getElementById('proposal').style.display = 'block';
+    }
+
+    function confirmProposal() {
+      alert('I can\'t believe you said yes! I\'ll make it the best Valentine\'s Day ever. I love you!');
+    }
+
+    function rejectProposal() {
+      alert('That\'s okay. I understand. I still love you.');
+    }
+  </script>
+</body>
+</html>
